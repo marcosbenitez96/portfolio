@@ -2,14 +2,21 @@
 <html>
     <head>
         <title>Marcos Benítez</title>
-    </head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    </head>
     <body>
         <header>
-            <h1>Marcos Benítez - Desarrollador Web Full Stack.</h1>
+            <nav class="menu-fijo">
+                <a href="#acerca-de-mi">Acerca de mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#experiencia">Experiencia/Proyectos</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+              </nav>
+            <h1 class="animacion-titulo">Marcos Benítez - Desarrollador Web Full Stack.</h1>
         </header>
-        <hr>
         <main>
-            <section>
+            <section id="acerca-de-mi">
                 <h2>Acerca de mi</h2>
                 <p>
                     Soy un joven apasionado por la tecnología, especialmente por el mundo del desarrollo. 
@@ -17,53 +24,81 @@
                     para mejorar mis proyectos.
                 </p>                   
             </section>
-            <section>
+            <section id="habilidades">
                 <h2>Habilidades</h2>
                 <ul>
-                    <li>Frontend</li>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
+                    <li class="desarrollo">Frontend</li>
+                    <ul class="tecnologia">
+                        <li title="HTML5"><i class="fa-brands fa-html5"></i></li>
+                        <li title="CSS3"><i class="fa-brands fa-css3-alt"></i></li>
+                        <li title="JavaScript"><i class="fa-brands fa-js"></i></li>
                     </ul>
-                    <li>Backend</li>
-                    <ul>
-                        <li>PHP</li>
+                    <li class="desarrollo">Backend</li>
+                    <ul class="tecnologia">
+                        <li title="PHP"><i class="fa-brands fa-php"></i></li>
                     </ul>
-                    <li>Base de datos</li>
-                    <ul>
-                        <li>MySQL</li>
+                    <li class="desarrollo">Base de datos</li>
+                    <ul class="tecnologia">
+                        <li title="MySQL"><i class="fa-solid fa-database"></i></li>
                     </ul>
-                    <li>SO</li>
-                    <ul>
-                        <li>Linux(Centos y Debian)</li>
-                        <li>Window</li>
+                    <li class="desarrollo">SO</li>
+                    <ul class="tecnologia">
+                        <li title="debian"><i class="fa-brands fa-debian"></i></li>
+                        <li title="centos"><i class="fa-brands fa-centos"></i></li>
+                        <li title="windows"><i class="fa-brands fa-windows"></i></li>
                     </ul>
                 </ul>
             </section>
             
-            <section>
+            <section id="experiencia">
                 <h2>Experiencia</h2>
                 <ul>
-                    <li><strong>Corporación Textil S.A (2021-Actualmente)</strong></li>
-                    <ol>
-                        <li>MarijoaPRO: ERP de la empresa</li>
-                        <li>Turnero: Sistema de turnos de la empresa</li>
-                    </ol>
+                  <li>
+                    <b>Corpóración Textil SA</b> (2021-Actualmente).
+                    <ul>
+                      <li>Desarrollador web junior.</li>
+                      <li>
+                         Responsable del desarrollo y mantenimiento del ERP.
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
             </section>
-            <section>
-                <h2>Contacto</h2>
+
+            <section id="proyectos">
+                <h2>Proyectos</h2>
                 <ul>
-                    <li><a href="https://github.com/marcosbenitez96">GitHub</a></li>
-                    <li><a href="https://wa.me/595994862053">Whatsapp</a></li>
-                    <li><a href="https://www.instagram.com/marcosgbp/">Instagram</a></li>
+                    <li>
+                        <a href="#">MarijoaPRO.</a>
+                        <p>ERP de la empresa, tiene como funciones el manejo de la parte administrativa, ventas, compras, producción, RRHH y reportes.</p>
+                    </li>
+                    <li>
+                        <a href="#">Turnero.</a>
+                        <p>Sistema de manejo de turnos para la gestión de los clientes.</p>
+                    </li>
+                    <li>
+                        <a href="#">BiblioSoft.</a>
+                        <p>Sistema de control de libros para bibliotecas.</p>
+                    </li>
+                    <li>
+                        <a href="#">RUC-PY.</a>
+                        <p>Página para consulta de contribuyentes por medio de número de documentos o nombres.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Puedes dejarme un mensaje en cualquier horario.</p>
+                <ul>
+                    <li><a href="https://github.com/marcosbenitez96" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://wa.me/595994862053" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/marcosgbp/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </section>
         </main>
-        <hr>
         <footer>
-            <p>Copyright &copy; 2024</p>
+            <p>Copyright &copy; Marcos Benítez 2024</p>
         </footer>
     </body>
 </html>
