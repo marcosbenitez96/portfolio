@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
 body{
     background: #f6f5f7; 
     font-family: 'Montserrat', sans-serif;
@@ -8,14 +7,48 @@ body{
     padding-top: 70px;
 }
 
+/*Sección Header*/
 header{
     background-color: #333;
+    border-top: 4px #7510f7 solid;
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
 }
+#by{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#avatar{
+    width: 100px;
+}
 
+/*Sección Scroll*/
+#arrow-contenedor{
+    visibility: hidden;
+    position: fixed;
+    border: 1px #7510f7 solid;
+    border-radius: 100px;
+    background-color: #7510f7;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #333 solid;
+    z-index: 10;
+}
+#arrow-top{
+    width: 25px;
+}
+
+/*Sección etiquetas generales*/
 h1 {
     margin-top: 0;
 }
@@ -23,7 +56,17 @@ h1 {
 h2 {
     margin-bottom: 10px;
 }
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
 
+/*Sección Nav*/
 nav {
     list-style: none;
     padding: 0;
@@ -41,71 +84,7 @@ nav a {
 nav a:hover {
     background-color: #ddd;
 }
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-section {
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-
-#acerca-de-mi p{
-    text-align: justify;
-}
-
-#habilidades ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px;
-}
-
-.desarrollo {
-    padding: 5px;
-    background-color: #d2d0d4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: 10px;
-    text-align: center;
-    font-weight: 700;
-}
-.tecnologia{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-#experiencia ul li {
-    margin-bottom: 10px;
-}
-
-#experiencia ul li strong {
-    font-weight: bold;
-}
-
-#proyectos ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-#proyectos ul li {
-    margin-bottom: 10px;
-}
-
-#proyectos ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 700;
-}
-
-#proyectos ul li a:hover {
-    text-decoration: underline;
-}
-
 .menu-fijo {
-    /*background-color: #dddcdf;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -117,6 +96,77 @@ section {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+/*Sección de Acerca de mi*/
+#acerca-de-mi p{
+    text-align: justify;
+}
+
+/*Sección de Habilidades*/
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+.desarrollo {
+    padding: 5px;
+    background-color: #d2d0d4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+.tecnologia{
+    display: flex;
+    justify-content: space-around;
+}
+.tecnologia-item-contenedor{
+    border: 2px #dddddd solid;
+    width: 100px;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+.tecnologia-item-texto{
+    font-size: 12px;
+    font-size: 800;
+}
+
+/*Sección de Experiencias*/
+#experiencia ul{
+    padding: 0;
+    margin: 0; 
+}
+#experiencia ul li {
+    list-style: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+.cargo {
+    font-weight: 700;
+}
+
+/*Sección de Proyectos*/
+#proyectos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#proyectos ul li {
+    margin-bottom: 10px;
+}
+#proyectos ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+#proyectos ul li a:hover {
+    text-decoration: underline;
+}
+
+/*Sección Contactos*/
 #contacto ul{
       display: flex;
       justify-content: space-evenly;
@@ -128,16 +178,20 @@ section {
     font-size: 50px;
     color: black;
 }
+
+/*Sección Footer*/
 footer{
     background-color: #333;
+    border-top: 4px #7510f7 solid;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
+
+/*Sección Animaciones*/
 .animacion-titulo {
     animation: aparecer 3s ease-in-out;
 }
-
 @keyframes aparecer {
     from {
         opacity: 0;
